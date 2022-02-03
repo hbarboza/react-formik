@@ -28,7 +28,7 @@ const Wrapper = styled.div`
   }
 
   input[type="email"] {
-    // border: green solid 1px;
+    border: green solid 1px;
   }
 
   .form-label {
