@@ -20,6 +20,12 @@ const validate = values => {
     errors.lastname = "El apellido debe ser mayor a 5 caracteres";
   }
 
+  if (!values.email) {
+    errors.email = "El Email es requerido";
+  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+    errors.email = "Ingresa una dirección de email válida";
+  }
+
   if (!values.radio) {
     errors.radio = "Requerido"
   }
