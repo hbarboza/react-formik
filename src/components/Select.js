@@ -1,7 +1,7 @@
 import {useField} from 'formik'
 
 const Select = ({label, ...props}) => {
-  const[field, meta] = useField()
+  const[field, meta] = useField(props)
   return(
     <div className="form-control">
       <label className="form-label">{label}</label>
